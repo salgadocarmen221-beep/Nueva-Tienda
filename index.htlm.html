@@ -26,7 +26,7 @@
       --accent-hover: #B06A3B;
       --whatsapp: #25D366;
       --whatsapp-hover: #1EBE5D;
-      --text-main: #1E2524;         /* Carbón suave (mejor lectura que negro puro) */
+      --text-main: #1E2524;         /* Carbón suave */
       --text-muted: #5C6B68;        /* Gris pizarra cálido */
       --border: #E2DDD5;
       --shadow-sm: 0 2px 8px rgba(31, 78, 70, 0.05);
@@ -120,16 +120,6 @@
       background-color: var(--primary-hover);
       transform: translateY(-2px);
       box-shadow: 0 6px 16px rgba(31, 78, 70, 0.28);
-    }
-
-    .btn-accent {
-      background-color: var(--accent);
-      color: #FFFFFF;
-    }
-
-    .btn-accent:hover {
-      background-color: var(--accent-hover);
-      transform: translateY(-2px);
     }
 
     .btn-outline {
@@ -1310,7 +1300,7 @@
 
       <div class="nav-actions">
         <button class="cart-trigger" onclick="toggleCart(true)" aria-label="Abrir carrito de cotización">
-          🛒 <span class="hide-mobile">Carrito</span>
+          🛒 <span>Carrito</span>
           <span class="cart-badge" id="cartCountBadge">0</span>
         </button>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menú">☰</button>
@@ -1408,7 +1398,7 @@
       <div class="catalog-controls" role="region" aria-label="Filtros del catálogo">
         <div class="control-group">
           <label for="searchInput">Buscar producto o marca</label>
-          <input type="search" id="searchInput" class="form-input" placeholder="Ej. Airpods, APPLE, Parlante, JBL..." />
+          <input type="search" id="searchInput" class="form-input" placeholder="Ej. Airpods, APPLE, Computadora, HP, JBL..." />
         </div>
 
         <div class="control-group">
@@ -1712,7 +1702,7 @@
       {
         index: 3,
         code: "N/D",
-        name: "Shampo medicado",
+        name: "Computadora laptop",
         brand: "HP",
         price: 22500,
         currency: "L",
@@ -1751,7 +1741,7 @@
     ];
 
     const WHATSAPP_NUMBER = "50499864645";
-    const STORAGE_KEY = "techimport_hn_cart_v1";
+    const STORAGE_KEY = "techimport_hn_cart_v2";
 
     // Estado del carrito cargado desde localStorage
     let cart = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
